@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>todolist</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="sass/style.css">
+</head>
+  <body>
+    <div class="container-fluid todolist text-white">
+        <div class="row">
+          <div class="col-4 title">
+            <h1 class="text-right">To-do <br> List</h1>
+          </div>
+          <div class="col-8 d-flex flex-column justify-content-between list">
+            <div class="upper">
+              <label for="event" class="w-100 h3 pt-4 pb-2 text-center">Add something to do...</label>
+              <div class="d-flex justify-content-center mb-3">
+                <input type="text" id="event" autocomplete="off" class="inputTxt py-2 px-2 w-75">
+                <button class="addButton" type="button" id="add">add</button>
+              </div>
+            </div>
+            <div class="lower">
+              <ul id="list" class="d-flex flex-column justify-content-start mb-0 pl-0 pr-2 py-3">
+                
+              </ul>
+            </div>
+            <div class="d-flex justify-content-between align-items-center funcGroup">
+              <p class="undone mb-0">undone :<span id="undone" class="undoneNum">0</span></p>
+              <a href="#" id="clear" class="clearBtn">clear all</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="js/all.js"></script>
+</body>
+</html>

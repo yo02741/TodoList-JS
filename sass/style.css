@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFF;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F1D290;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Architects Daughter', cursive;
+  background: url("https://thumbs.gfycat.com/UnimportantDistinctIberianmidwifetoad-size_restricted.gif") 20% center fixed no-repeat;
+  background-size: cover;
+}
+
+.title {
+  padding: 150px 20px;
+}
+
+.title h1 {
+  color: #000;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.todolist {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.list {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.todolist .upper .inputTxt {
+  font-size: 20px;
+  color: #F1D290;
+  background: transparent;
+  border: 0;
+  border-bottom: 3px solid #FFF;
+  outline: none;
+  margin-right: 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.todolist .upper .inputTxt:focus {
+  border-bottom: 3px solid #F1D290;
+}
+
+.todolist .upper .inputTxt:focus + .addButton {
+  border: 2px solid #F1D290;
+  color: #F1D290;
+}
+
+.todolist .upper .addButton {
+  display: block;
+  color: #FFF;
+  border: 2px solid #FFF;
+  border-radius: 15px;
+  padding: 10px;
+  background: transparent;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.todolist .upper .addButton:hover {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.todolist .lower {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.todolist .lower li {
+  background: gray;
+  margin: 5px 0;
+  font-size: 24px;
+  list-style-type: none;
+  padding: 10px 8px;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  cursor: pointer;
+  width: 80%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: "\2714";
+  font-size: 15px;
+  border: 1px solid #FFF;
+  border-radius: 3px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-left: 3px;
+  margin-right: 20px;
+  color: transparent;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+input[type="checkbox"]:checked + label::before {
+  color: #F1D290;
+  border: 1px solid #F1D290;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #F1D290;
+}
+
+input[type="checkbox"]:hover + label {
+  color: #F1D290;
+}
+
+input[type="checkbox"]:hover + label::before {
+  border: 1px solid #F1D290;
+}
+
+.del {
+  display: block;
+  padding: 0 10px;
+  color: #FFF;
+  text-decoration: none !important;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.del:hover {
+  color: #F1D290;
+}
+
+.funcGroup {
+  padding: 15px;
+  font-size: 24px;
+}
+
+.funcGroup .undoneNum {
+  margin: 0 8px;
+}
+
+.funcGroup .clearBtn {
+  color: #FFF;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  text-decoration: none;
+}
+
+.funcGroup .clearBtn:hover {
+  color: #F1D290;
+}
+/*# sourceMappingURL=style.css.map */
